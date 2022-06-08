@@ -76,6 +76,14 @@ public class Teste extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
         jProgressBar3 = new javax.swing.JProgressBar();
         jRadioButton6 = new javax.swing.JRadioButton();
+        jPanel4 = new javax.swing.JPanel();
+        jLabel11 = new javax.swing.JLabel();
+        jRadioButton28 = new javax.swing.JRadioButton();
+        jRadioButton29 = new javax.swing.JRadioButton();
+        jRadioButton30 = new javax.swing.JRadioButton();
+        jLabel12 = new javax.swing.JLabel();
+        jButton6 = new javax.swing.JButton();
+        jProgressBar6 = new javax.swing.JProgressBar();
         jPanel3 = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
         jRadioButton16 = new javax.swing.JRadioButton();
@@ -88,14 +96,6 @@ public class Teste extends javax.swing.JFrame {
         jProgressBar4 = new javax.swing.JProgressBar();
         jRadioButton7 = new javax.swing.JRadioButton();
         jRadioButton21 = new javax.swing.JRadioButton();
-        jPanel4 = new javax.swing.JPanel();
-        jLabel11 = new javax.swing.JLabel();
-        jRadioButton28 = new javax.swing.JRadioButton();
-        jRadioButton29 = new javax.swing.JRadioButton();
-        jRadioButton30 = new javax.swing.JRadioButton();
-        jLabel12 = new javax.swing.JLabel();
-        jButton6 = new javax.swing.JButton();
-        jProgressBar6 = new javax.swing.JProgressBar();
         jPanel5 = new javax.swing.JPanel();
         jLabel13 = new javax.swing.JLabel();
 
@@ -258,6 +258,60 @@ public class Teste extends javax.swing.JFrame {
         });
         jPanel2.add(jRadioButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 220, -1, -1));
 
+        jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "4 - Reatividade Pupilar", javax.swing.border.TitledBorder.LEFT, javax.swing.border.TitledBorder.TOP, new java.awt.Font("sansserif", 0, 14))); // NOI18N
+        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel11.setFont(new java.awt.Font("sansserif", 0, 16)); // NOI18N
+        jLabel11.setText("Selecionar uma opção:");
+        jPanel4.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 39, -1, -1));
+
+        buttonGroup4.add(jRadioButton28);
+        jRadioButton28.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
+        jRadioButton28.setText("<html><strong>Nenhuma pupila</strong> reage ao estímulo de luz.</html>");
+        jRadioButton28.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton28ActionPerformed(evt);
+            }
+        });
+        jPanel4.add(jRadioButton28, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 78, -1, -1));
+
+        buttonGroup4.add(jRadioButton29);
+        jRadioButton29.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
+        jRadioButton29.setText("<html><strong>Uma pupila</strong> não reage ao estímulo de luz</html>");
+        jRadioButton29.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+        jRadioButton29.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton29ActionPerformed(evt);
+            }
+        });
+        jPanel4.add(jRadioButton29, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, -1, -1));
+
+        buttonGroup4.add(jRadioButton30);
+        jRadioButton30.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
+        jRadioButton30.setText("<html><strong>Ambas as pupilas</strong> Reagem ao estímulo de luz.</html>");
+        jRadioButton30.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+        jRadioButton30.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton30ActionPerformed(evt);
+            }
+        });
+        jPanel4.add(jRadioButton30, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 160, -1, -1));
+
+        jLabel12.setText("N/A");
+        jPanel4.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 310, -1, -1));
+
+        jButton6.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jButton6.setText("Calcular Resultado");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
+        jPanel4.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 284, 150, -1));
+
+        jProgressBar6.setValue(80);
+        jPanel4.add(jProgressBar6, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 316, -1, -1));
+
         jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "3 - Reposta Motora", javax.swing.border.TitledBorder.LEFT, javax.swing.border.TitledBorder.TOP, new java.awt.Font("sansserif", 0, 14))); // NOI18N
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -354,60 +408,6 @@ public class Teste extends javax.swing.JFrame {
             }
         });
         jPanel3.add(jRadioButton21, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, -1, -1));
-
-        jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "4 - Reatividade Pupilar", javax.swing.border.TitledBorder.LEFT, javax.swing.border.TitledBorder.TOP, new java.awt.Font("sansserif", 0, 14))); // NOI18N
-        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel11.setFont(new java.awt.Font("sansserif", 0, 16)); // NOI18N
-        jLabel11.setText("Selecionar uma opção:");
-        jPanel4.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 39, -1, -1));
-
-        buttonGroup4.add(jRadioButton28);
-        jRadioButton28.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
-        jRadioButton28.setText("<html><strong>Nenhuma pupila</strong> reage ao estímulo de luz.</html>");
-        jRadioButton28.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton28ActionPerformed(evt);
-            }
-        });
-        jPanel4.add(jRadioButton28, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 78, -1, -1));
-
-        buttonGroup4.add(jRadioButton29);
-        jRadioButton29.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
-        jRadioButton29.setText("<html><strong>Uma pupila</strong> não reage ao estímulo de luz</html>");
-        jRadioButton29.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
-        jRadioButton29.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton29ActionPerformed(evt);
-            }
-        });
-        jPanel4.add(jRadioButton29, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, -1, -1));
-
-        buttonGroup4.add(jRadioButton30);
-        jRadioButton30.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
-        jRadioButton30.setText("<html><strong>Ambas as pupilas</strong> Reagem ao estímulo de luz.</html>");
-        jRadioButton30.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
-        jRadioButton30.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton30ActionPerformed(evt);
-            }
-        });
-        jPanel4.add(jRadioButton30, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 160, -1, -1));
-
-        jLabel12.setText("N/A");
-        jPanel4.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 310, -1, -1));
-
-        jButton6.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jButton6.setText("Calcular Resultado");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
-            }
-        });
-        jPanel4.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 284, 150, -1));
-
-        jProgressBar6.setValue(80);
-        jPanel4.add(jProgressBar6, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 316, -1, -1));
 
         jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "5 - Resultado", javax.swing.border.TitledBorder.LEFT, javax.swing.border.TitledBorder.TOP, new java.awt.Font("sansserif", 0, 14))); // NOI18N
         jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -654,8 +654,8 @@ public class Teste extends javax.swing.JFrame {
         resultado = valores[0]+valores[1]+valores[2]-valores[3];
         
         boolean resultado_inconclusivo = false;
-        for(int item : valores){
-            if(item == 0){
+        for(int i = 0; i < valores.length-1; i++){
+            if(valores[i] == 0){
                 resultado_inconclusivo = true;
             }
         }
