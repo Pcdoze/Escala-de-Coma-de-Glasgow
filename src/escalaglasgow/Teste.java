@@ -21,13 +21,6 @@ public class Teste extends javax.swing.JFrame {
         initComponents();
     }
     public void setup(){
-        addWindowListener(new WindowAdapter(){
-            @Override
-            public void windowClosing(WindowEvent e){
-                janela_fechada = true;
-            }
-        });
-        
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setVisible(true);
         

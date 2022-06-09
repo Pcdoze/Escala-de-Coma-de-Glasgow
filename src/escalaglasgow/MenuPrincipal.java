@@ -10,7 +10,7 @@ package escalaglasgow;
  */
 public class MenuPrincipal extends javax.swing.JFrame {
     
-    Teste escala_teste = new Teste();
+    Teste escala_teste;
 
     /**
      * Creates new form MenuPrincipal
@@ -102,7 +102,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        if(escala_teste.janela_fechada){
+        if(escala_teste == null){
             escala_teste = new Teste();
         }
         escala_teste.setup();
